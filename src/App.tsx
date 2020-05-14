@@ -1,4 +1,4 @@
-// import "./styles.css";
+import "./styles.css";
 
 import React from "react";
 import { useActions, useValues } from "kea";
@@ -11,11 +11,11 @@ export default function App() {
 
   return (
     <div className="app">
-      <h1>Simple counter</h1>
+      <h1>Simple Even or Odd finder counter  </h1>
       <div className="kea-counter">
         Count: <h2>{counter}</h2>
         <br />
-        Doublecount: <h2>{doubleCounter}</h2>
+        Is it Even or Odd : <h2>{doubleCounter}</h2>
         <br />
         <button onClick={() => increment(1)}>Increment</button>
         <button onClick={() => decrement(1)}>Decrement</button>
